@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #765919, rgb(222 201 179));
+}
+
+.c-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.c-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .sidebar{
+    background: rgb(191 168 133);
+    position: fixed;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.sidebar-off {
+    left: -225px !important;
+}
+
+.sidebar .menu-container .card {
+    height: 4rem;
+    font-size: 1.5rem;
+    border: 2px solid black;
+}
+
+/*----Main----*/
+.wrapper main {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    margin-top: 0;
+    transition: all 0.5s ease;
+}
+
+.main-full {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+
+main nav{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+main section {
+    border: 2px solid black;
+    height: 10rem;
+    padding: 10px;
+}
+
+main footer {
+    border: 2px solid black;
+    height: 10rem;
+    padding: 10px;
+}
+
+
+
