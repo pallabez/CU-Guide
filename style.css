@@ -43,13 +43,40 @@ body {
     left: -225px !important;
 }
 
+.sidebar .menu-container {
+    margin-top: 1rem;;
+}
+
 .sidebar .menu-container .card {
+    display: flex;
+    align-items: center;
+
+    padding-left: 0.2rem;
     height: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+
     border: 2px solid black;
 }
 
+.sidebar .menu-container .card span {
+    margin-left: 4px;
+}
+
+.sidebar .menu-footer {
+    height: 8rem;
+}
+
+
+
+.sidebar .menu-footer span {
+    font-size: 0.8rem;
+    width: 6rem;
+
+    margin-left: 4px;
+}
+
 /*----Main----*/
+
 .wrapper main {
     width: calc(100% - 225px);
     margin-left: 225px;
