@@ -135,9 +135,20 @@ main {
 
     background-color: var(--background);
     box-shadow: 0 0 6px 2px var(--shadow);
+    transition: all 0.5s ease;
+
 }
 
+.navbar-minimized {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    
+}
 
+.navbar .hamburger {
+    width: min-content;
+    margin-left: 4px;
+}
 
 
 /*----Blanket----*/
