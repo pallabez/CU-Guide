@@ -18,11 +18,15 @@
     font-family: "Open Sans",sans-serif;
     font-style: normal;
     font-weight: 400;
-
+    text-align: justify;
 }
 
 body {
     background-color: var(--background);
+}
+
+.wrapper {
+    overflow: hidden;
 }
 
 .c-col {
@@ -37,7 +41,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 
 /*----sidebar----*/
 
@@ -146,6 +149,8 @@ main {
     margin-top: 0;
     padding-top: 3rem;
     transition: all 0.5s ease;
+
+    min-width: 15rem;
 }
 
 .main-full {
@@ -155,7 +160,44 @@ main {
 
 /*----About Us----*/
 
+/*----Sites----*/
 
+#sites .content .box {
+    position: relative;
+    display: flex;
+
+    border: 1px solid black;
+}
+
+#sites .content .box:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+#sites .content .box .details {
+    width: 50%;
+}
+
+#sites .content .box .details .heading {
+    font-size: 1.4rem;
+}
+
+#sites .content .box picture img{
+    width: 100%;
+    min-width: 15rem;
+}
+
+#sites .content .box picture {
+    width: 50%;
+}
+
+@media screen and (max-width: 576px) {
+    #sites .content .box {
+        flex-direction: column;
+    }
+    #sites .content .box:nth-child(2n) {
+        flex-direction: column;
+    }
+}
 
 /*----Blanket----*/
 
