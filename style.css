@@ -203,26 +203,53 @@ main {
 
 /*----Contact Us----*/
 
-#contact-us .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#contact-us {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
 }
 
 #contact-us .content .form {
-    flex-flow: column;
-    
+    float: left;
     width: 50%;
+    margin-top: 6px;
+    padding: 20px;
 }
 
 #contact-us .content .form input, #contact-us .content .form textarea{
-    display: block;
-    width: 15rem;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#contact-us .content .form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
 }
 
 #contact-us .content .information {
+    float: left;
     width: 50%;
+    margin-top: 6px;
+    padding: 20px;
 }
+
+#contact-us .content .information div i {
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 576px) {
+    #contact-us .content .information, #contact-us .content .form {
+        width: 100%;
+    }
+}
+
 /*----Blanket----*/
 
 .blanket {
