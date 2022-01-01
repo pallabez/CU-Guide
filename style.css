@@ -199,6 +199,30 @@ main {
     }
 }
 
+/*----Contact Info----*/
+
+/*----Contact Us----*/
+
+#contact-us .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contact-us .content .form {
+    flex-flow: column;
+    
+    width: 50%;
+}
+
+#contact-us .content .form input, #contact-us .content .form textarea{
+    display: block;
+    width: 15rem;
+}
+
+#contact-us .content .information {
+    width: 50%;
+}
 /*----Blanket----*/
 
 .blanket {
