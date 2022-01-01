@@ -165,8 +165,6 @@ main {
 #sites .content .box {
     position: relative;
     display: flex;
-
-    border: 1px solid black;
 }
 
 #sites .content .box:nth-child(2n) {
@@ -205,7 +203,6 @@ main {
 
 #contact-us {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 10px;
 }
 
