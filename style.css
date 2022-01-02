@@ -93,6 +93,7 @@ body {
 
     transition: all 0.5s ease;
 }
+
 .sidebar .menu-container .card:hover {
     background-color: var(--secondary-color);
 
@@ -147,7 +148,6 @@ main {
     width: calc(100% - 225px);
     margin-left: 225px;
     margin-top: 0;
-    padding-top: 3rem;
     transition: all 0.5s ease;
 
     min-width: 15rem;
@@ -158,25 +158,38 @@ main {
     width: 100% !important;
 }
 
+main section {
+    margin-top: 40px;
+}
+
+main section::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 /*----About Us----*/
 
 /*----Sites----*/
 
 #sites .content .box {
     position: relative;
-    display: flex;
-}
-
-#sites .content .box:nth-child(2n) {
-    flex-direction: row-reverse;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #sites .content .box .details {
-    width: 50%;
+    float: left;
+    width: 49%;
 }
 
 #sites .content .box .details .heading {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+}
+
+#sites .content .box .details li {
+    margin-left: 20px;
+    padding: 5px;
 }
 
 #sites .content .box picture img{
@@ -185,32 +198,44 @@ main {
 }
 
 #sites .content .box picture {
+    float: left;
     width: 50%;
 }
 
 @media screen and (max-width: 576px) {
-    #sites .content .box {
-        flex-direction: column;
+    #sites .content .box .details {
+        width: 100%;
     }
-    #sites .content .box:nth-child(2n) {
-        flex-direction: column;
+    #sites .content .box picture {
+        width: 100%;
     }
 }
 
 /*----Contact Info----*/
+#contact-info table {
+    table-layout: auto;
+    width: 100%;
+}
+
+#contact-info table th {
+    font-weight: bold;
+    background-color: var(--shadow);
+}
+
+#contact-info table tr:nth-child(2n + 1) {
+    background-color: rgb(238, 224, 224);
+}
 
 /*----Contact Us----*/
 
 #contact-us {
     border-radius: 5px;
-    padding: 10px;
 }
 
 #contact-us .content .form {
     float: left;
     width: 50%;
-    margin-top: 6px;
-    padding: 20px;
+
 }
 
 #contact-us .content .form input, #contact-us .content .form textarea{
@@ -251,7 +276,7 @@ main {
 
 .blanket {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
