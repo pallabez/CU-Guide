@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --primary-color: #ce3d3d;
+    --secondary-color: #922b2b;
+    --background: #ebebeb;
+    --shadow: #8d8d8d;
+}
+
+/*----Main----*/
+
+main {
+    position: relative;
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    margin-top: 0;
+    transition: all 0.5s ease;
+
+    min-width: 15rem;
+}
+
+.main-full {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+main section {
+    margin-top: 40px;
+}
+
+main section::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*----About Us----*/
+
+#about-us .content p{
+    max-width: 900px;
+}
+
+/*----Sites----*/
+
+#sites .content .box {
+    position: relative;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#sites .content .box .details {
+    float: left;
+    width: 49%;
+}
+
+#sites .content .box .details .heading {
+    font-size: 1.2rem;
+}
+
+#sites .content .box .details li {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+#sites .content .box .details a{
+    color: rgb(85, 29, 138);
+    text-decoration: underline;
+}
+
+#sites .content .box picture img{
+    width: 100%;
+    min-width: 15rem;
+}
+
+#sites .content .box picture {
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 576px) {
+    #sites .content .box .details {
+        width: 100%;
+    }
+    #sites .content .box picture {
+        width: 100%;
+    }
+}
+
+/*----Contact Info----*/
+#contact-info table {
+    table-layout: auto;
+    width: 100%;
+}
+
+#contact-info table th {
+    font-weight: bold;
+    background-color: var(--shadow);
+}
+
+#contact-info table tr:nth-child(2n + 1) {
+    background-color: rgb(238, 224, 224);
+}
+
+/*----Contact Us----*/
+
+#contact-us {
+    border-radius: 5px;
+}
+
+#contact-us .content .form {
+    float: left;
+    width: 50%;
+
+}
+
+#contact-us .content .form input, #contact-us .content .form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#contact-us .content .form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#contact-us .content .information {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+#contact-us .content .information div i {
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 576px) {
+    #contact-us .content .information, #contact-us .content .form {
+        width: 100%;
+    }
+}
+
