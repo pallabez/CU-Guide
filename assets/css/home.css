@@ -87,6 +87,34 @@ main section::after {
     }
 }
 
+/* ----Currency Converter---- */
+
+.cc__field-heading {
+    width: 150px;
+    display: inline-block;
+}
+
+
+.cc__field {
+    padding: 4px;
+}
+
+.cc__btn {
+    padding: 2px 8px;
+    margin-top: 50px;
+    background-color: var(--primary-color);
+    border: 0;
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.cc__display {
+    margin-left: 4px;
+    display: inline-block;
+}
+
 /*----Contact Info----*/
 #contact-info table {
     table-layout: auto;
