@@ -10,18 +10,8 @@
 /*----Main----*/
 
 main {
-    position: relative;
-    width: calc(100% - 225px);
-    margin-left: 225px;
-    margin-top: 0;
-    transition: all 0.5s ease;
-
-    min-width: 15rem;
-}
-
-.main-full {
-    margin-left: 0 !important;
-    width: 100% !important;
+    width: clamp(300px, 100%, 1400px);
+    padding: 10px;
 }
 
 main section {

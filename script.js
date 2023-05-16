@@ -10,6 +10,7 @@ function hamburgerSwitch() {
 
 "use strict";
 
+// http://api.exchangeratesapi.io/v1/latest?access_key=1d9f4ad80c325672be5c25918a2ac7db
 const key = "access_key=1d9f4ad80c325672be5c25918a2ac7db";
 const baseUrl = "http://api.exchangeratesapi.io/v1/"
 
