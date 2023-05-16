@@ -12,6 +12,7 @@
 main {
     width: clamp(300px, 100%, 1400px);
     padding: 10px;
+    overflow-y: scroll;
 }
 
 main section {
