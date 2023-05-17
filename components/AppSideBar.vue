@@ -51,7 +51,7 @@
     <v-divider></v-divider>
 
     <v-list>
-      <v-list-item v-for="[icon, text, link, target] in links" :key="icon" link :href="link" :target=target>
+      <v-list-item v-for="[icon, text, link, target] in links" :key="icon" link :to="target == '_self' ? link : null" :href="link" :target=target>
         <template v-slot:prepend>
           <v-icon>{{ icon }}</v-icon>
         </template>
@@ -76,10 +76,10 @@ export default {
     drawer: null,
     links: [
       ['mdi-home', 'Home', '/', '_self'],
+      ['mdi-account-multiple', 'Contact Info', '/contact-info', '_self'],
       ['mdi-bell', 'Notifiactions', '/notifications', '_self'],
       // ['mdi-delete', 'Trash', '/notifications', '_self'],
       ['mdi-wallet-bifold', 'Academic Fees', 'https://www.cuchd.in/admissions/course-fee.php', '_blank'],
-      ['mdi-account-multiple', 'Contact Info', '/contact-info', '_self']
     ],
   }),
 }

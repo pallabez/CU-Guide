@@ -60,7 +60,21 @@ export default {
                     'Course Quiz (Graded)',
                     'Course Worksheet',
                 ],
-            }
+            },
+            {
+                title: 'Devfolio',
+                image: '/images/DEVFOLIO.png',
+                description: 'Hackathons website',
+                link: 'https://devfolio.co/hackathons',
+                subpoints: [
+                    'HACKATHON Updates',
+                    'Registration',
+                    'Hackathon pass',
+                    'Team Making',
+                    'Different Fields',
+                    'Ranking',
+                ],
+            },
         ]
     })
 }
