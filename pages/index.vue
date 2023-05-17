@@ -11,6 +11,21 @@ export default {
     data: () => ({
         websites: [
             {
+                title: 'CUCHD',
+                image: '/images/CUCHD.png',
+                description: 'Central Portal of CHANDIGARH UNIVERSITY',
+                link: 'https://www.cuchd.in/',
+                subpoints: [
+                    'CHANDIGARH UNIVERSITY whole achievments',
+                    'Main Website of Chandigarh University',
+                    'Every Detail of Programs',
+                    'FEE Structure',
+                    'Top Students',
+                    'Campus life',
+                    'Contact Details',
+                ],
+            },
+            {
                 title: 'CUIMS',
                 image: '/images/CUIMS.png',
                 description: 'Central Portal for CU student',
@@ -94,6 +109,20 @@ export default {
                 image: '/images/CodeChef.png',
                 description: 'Practical Coding for Everyone',
                 link: 'https://www.codechef.com/',
+                subpoints: [
+                    'Coding Practice',
+                    'Different Programming Languages',
+                    'Ranking among Others',
+                    'Interview Questions',
+                    'Programming Solutions',
+                    'Profile',
+                ],
+            },
+            {
+                title: 'HackerRank',
+                image: '/images/HackerRank.png',
+                description: 'Online Coding Tests and Technical Interview',
+                link: 'https://www.hackerrank.com/',
                 subpoints: [
                     'Coding Practice',
                     'Different Programming Languages',
