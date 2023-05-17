@@ -75,6 +75,20 @@ export default {
                     'Ranking',
                 ],
             },
+            {
+                title: 'COURSERA',
+                image: '/images/COURSERA.png',
+                description: 'Online learning platform',
+                link: 'https://www.coursera.org/',
+                subpoints: [
+                    'Various Courses',
+                    'Specializations',
+                    'Certification of Top Colleges',
+                    'Top Company Courses',
+                    'Projects',
+                    'MOOCS courses',
+                ],
+            },
         ]
     })
 }
