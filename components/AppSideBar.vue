@@ -39,9 +39,11 @@
     </div>
   </aside> -->
 
-  <v-navigation-drawer v-model="drawer">
+  <v-navigation-drawer v-model="drawer" class="bg-primary">
     <v-sheet color="primary-darken-1" class="pa-4">
-      <v-avatar class="mb-4" color="white" size="64" />
+      <v-avatar color="white" size="64" class="mb-4">
+        <v-icon color="primary" size="40"> mdi-account-school </v-icon>
+      </v-avatar>
 
       <div class="email">21BCS1351@cuchd.in</div>
     </v-sheet>
@@ -51,12 +53,20 @@
     <v-list>
       <v-list-item v-for="[icon, text, link, target] in links" :key="icon" link :href="link" :target=target>
         <template v-slot:prepend>
-          <v-icon color="primary">{{ icon }}</v-icon>
+          <v-icon>{{ icon }}</v-icon>
         </template>
 
         <v-list-item-title>{{ text }}</v-list-item-title>
       </v-list-item>
     </v-list>
+
+    <template v-slot:append>
+      <div class="menu-footer">
+        <v-icon size="14"> mdi-copyright </v-icon>
+        <span>Made by Back Benchers</span>
+      </div>
+    </template>
+
   </v-navigation-drawer>
 </template>
 
@@ -77,7 +87,12 @@ export default {
 
 
 <style scoped>
-.email {
-  color: white;
+.menu-footer {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: auto;
 }
 </style>
