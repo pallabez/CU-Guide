@@ -40,7 +40,7 @@
   </aside> -->
 
   <v-navigation-drawer v-model="drawer" class="bg-primary">
-    <v-sheet color="primary-darken-1" class="pa-4">
+    <v-sheet color="primary-darken-1" class="px-4 py-12">
       <v-avatar color="white" size="64" class="mb-4">
         <v-icon color="primary" size="40"> mdi-account-school </v-icon>
       </v-avatar>
