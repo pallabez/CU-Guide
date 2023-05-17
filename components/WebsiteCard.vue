@@ -1,5 +1,5 @@
 <template>
-    <v-card class="mx-auto" >
+    <v-card class="mx-auto">
         <v-img :src='website.image' height="200px" cover gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"></v-img>
 
         <v-card-title>
@@ -7,11 +7,11 @@
         </v-card-title>
 
         <v-card-subtitle>
-            1,000 miles of wonder
+            {{ website.description }}
         </v-card-subtitle>
 
         <v-card-actions>
-            <v-btn color="primary" variant="text" href="">
+            <v-btn color="primary" variant="text" :href="website.link" target="_blank">
                 Explore
             </v-btn>
 
@@ -25,10 +25,9 @@
                 <v-divider></v-divider>
 
                 <v-card-text>
-                    I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have
-                    time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that
-                    data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry?
-                    I've got to find a way to escape.
+                    <ul class='subpoints'>
+                        <li v-for="point in website.subpoints">{{ point }}</li>
+                    </ul>
                 </v-card-text>
             </div>
         </v-expand-transition>
@@ -43,3 +42,9 @@
     props: ['website']
   }
 </script>
+
+<style scoped>
+.subpoints {
+    list-style-type: none;
+}
+</style>

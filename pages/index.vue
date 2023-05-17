@@ -13,8 +13,8 @@ export default {
             {
                 title: 'CUIMS',
                 image: '/images/CUIMS.png',
-                description: '',
-                link: '',
+                description: 'Central Portal for CU student',
+                link: 'https://uims.cuchd.in/uims/',
                 subpoints: [
                     'Attendence History',
                     'Time Table',
@@ -30,8 +30,8 @@ export default {
             {
                 title: 'CUCET',
                 image: '/images/CUCET.png',
-                description: '',
-                link: '',
+                description: 'External CU website to get details about the university',
+                link: 'https://cucet.cuchd.in/',
                 subpoints: [
                     'Apply to Chandigarh University',
                     'Get blackboard & CUIMS login and password',
@@ -43,12 +43,24 @@ export default {
             {
                 title: 'SHL',
                 image: '/images/SHL.png',
-                description: '',
-                link: '',
+                description: 'Online examination portal',
+                link: 'https://amcatglobal.aspiringminds.com/',
                 subpoints: [
                     'Online Examination Portal',
+                    'Credentials can be found in official outlook account, few days before exam'
                 ],
             },
+            {
+                title: 'LMS',
+                image: '/images/LMS.png',
+                description: 'Course Portal',
+                link: 'https://lms.cuchd.in/',
+                subpoints: [
+                    'Course PPT & Doc',
+                    'Course Quiz (Graded)',
+                    'Course Worksheet',
+                ],
+            }
         ]
     })
 }
