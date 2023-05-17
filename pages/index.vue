@@ -1,7 +1,7 @@
 <template>
     <v-row>
         <v-col v-for="website in websites" :key="website.title" cols="12" md="6">
-            <website-card :website="website"/>
+            <website-card :website="website" />
         </v-col>
     </v-row>
 </template>
@@ -62,6 +62,48 @@ export default {
                 ],
             },
             {
+                title: 'NPTEL',
+                image: '/images/NPTEL.png',
+                description: 'Online Courses',
+                link: 'https://swayam.gov.in/nc_details/NPTEL',
+                subpoints: [
+                    'Courses from IIT / NIT',
+                    'Different Courses for any Branch of Engineering',
+                    'MOOCs Courses',
+                    'Valid Certification Among Universities',
+                    'Weekly Solutions',
+                    'Assignments',
+                ],
+            },
+            {
+                title: 'Coursera',
+                image: '/images/COURSERA.png',
+                description: 'Online learning platform',
+                link: 'https://www.coursera.org/',
+                subpoints: [
+                    'Various Courses',
+                    'Specializations',
+                    'Certification of Top Colleges',
+                    'Top Company Courses',
+                    'Projects',
+                    'MOOCS courses',
+                ],
+            },
+            {
+                title: 'CodeChef',
+                image: '/images/CodeChef.png',
+                description: 'Practical Coding for Everyone',
+                link: 'https://www.codechef.com/',
+                subpoints: [
+                    'Coding Practice',
+                    'Different Programming Languages',
+                    'Ranking among Others',
+                    'Interview Questions',
+                    'Programming Solutions',
+                    'Profile',
+                ],
+            },
+            {
                 title: 'Devfolio',
                 image: '/images/DEVFOLIO.png',
                 description: 'Hackathons website',
@@ -73,20 +115,6 @@ export default {
                     'Team Making',
                     'Different Fields',
                     'Ranking',
-                ],
-            },
-            {
-                title: 'COURSERA',
-                image: '/images/COURSERA.png',
-                description: 'Online learning platform',
-                link: 'https://www.coursera.org/',
-                subpoints: [
-                    'Various Courses',
-                    'Specializations',
-                    'Certification of Top Colleges',
-                    'Top Company Courses',
-                    'Projects',
-                    'MOOCS courses',
                 ],
             },
         ]
