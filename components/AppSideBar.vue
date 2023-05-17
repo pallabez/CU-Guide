@@ -78,7 +78,7 @@ export default {
       ['mdi-home', 'Home', '/', '_self'],
       ['mdi-bell', 'Notifiactions', '/notifications', '_self'],
       // ['mdi-delete', 'Trash', '/notifications', '_self'],
-      ['mdi-cash-multiple', 'Academic Fees', 'https://www.cuchd.in/admissions/course-fee.php', '_blank'],
+      ['mdi-wallet-bifold', 'Academic Fees', 'https://www.cuchd.in/admissions/course-fee.php', '_blank'],
       ['mdi-account-multiple', 'Contact Info', '/contact-info', '_self']
     ],
   }),
